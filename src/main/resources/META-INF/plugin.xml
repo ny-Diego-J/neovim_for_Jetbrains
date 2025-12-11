@@ -1,15 +1,29 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.nydiegoj.neovimforjetbrains</id>
-    <name>neovim_for_Jetbrains</name>
-    <vendor>ny-diego-j</vendor>
+    <name>Neovim_design</name>
+    <version>1.0.0</version>
+    <vendor email="diego.jimenez@noseryoung.ch">digi.00</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.nydiegoj.neovimforjetbrains.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.nydiegoj.neovimforjetbrains.startup.MyProjectActivity" />
+
+        <toolWindow
+                factoryClass="com.github.nydiegoj.neovimforjetbrains.toolWindow.MyToolWindowFactory"
+                id="MyToolWindow"
+        />
+
+        <postStartupActivity
+                implementation="com.github.nydiegoj.neovimforjetbrains.startup.MyProjectActivity"
+        />
+
+        <themeProvider id="tokyo-night" path="/json/theme.json"/>
+
+
+        <bundledColorScheme id="MeinScheme" path="/colorSchemes/meins"/>
+
     </extensions>
 </idea-plugin>

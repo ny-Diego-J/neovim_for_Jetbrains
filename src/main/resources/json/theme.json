@@ -1,0 +1,31 @@
+{
+  "name": "Tokyo Night",
+  "dark": true,
+
+  "ui": {
+    "Panel.background": "#1a1b26",
+    "Component.background": "#1a1b26",
+    "ToolWindow.background": "#1a1b26",
+    "EditorTabs.background": "#16161e",
+    "EditorTabs.selectedBackground": "#1a1b26",
+    "EditorTabs.borderColor": "#1a1b26",
+
+    "Borders.color": "#292e42",
+    "ScrollBar.thumb": "#414868",
+    "ScrollBar.track": "#1a1b26",
+
+    "Menu.background": "#1a1b26",
+    "Popup.background": "#1a1b26",
+    "Tooltip.background": "#16161e",
+
+    "List.background": "#1a1b26",
+    "Tree.background": "#1a1b26",
+    "Table.background": "#1a1b26"
+  },
+
+  "icons": {
+    "ColorPalette": "Vibrant"
+  },
+
+  "editorScheme": "/colorSchemes/meins.xml"
+}
